@@ -24,4 +24,4 @@
 # <kbd>[**Visit My Live Website Link!**](https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c)</kbd>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Handjet&weight=600&size=22&pause=1000&color=B764FD&width=435&lines=My+Key+Takeaways++(%E0%B9%91%3E%E2%97%A1%3C%E0%B9%91))](https://git.io/typing-svg)
-<a> i have learned a lot so far. the future me will edit this </a>
+<a>i have learned a lot so far. the future me will edit this </a>
