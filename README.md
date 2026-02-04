@@ -1,3 +1,4 @@
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Handjet&weight=600&size=22&pause=1000&color=B764FD&width=435&lines=Welcome+to+My+Portfolio+(%E2%89%A7%E2%97%A1%E2%89%A6)+!!)](https://git.io/typing-svg)
 
 <p align="center">
 <pre>
@@ -7,10 +8,10 @@
 |  USER PROFILE v1.0                                                                            					    |
 |                                                                                                					   	|
 |   /\___/\          [SYSTEM STATUS]                                                             					   	|
-|  (  o . o )        > NAME..............: Simone Pauline M. Dagondon                           					    |
-|   >  ^  <          > DEGREE PROGRAM............: BS Computer Science													|
-|  /       \         > YEAR_LVL..........: Sophomore																	|
-|  \_______/         > LIVE WEBSITE LINK........: https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c   	|
+|  (  o . o )        > NAME...............: Simone Pauline M. Dagondon                           					    |
+|   >  ^  <          > DEGREE PROGRAM.....: BS Computer Science												 			|
+|  /       \         > YEAR_LVL...........: Sophomore																	|
+|  \_______/         > LIVE WEBSITE LINK..: https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c   		|
 |                                                                                                					   	|
 |_______________________________________________________________________________________________________________________|
 </pre>
