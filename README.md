@@ -18,9 +18,10 @@
 </p>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Handjet&weight=600&size=22&pause=1000&color=B764FD&width=435&lines=How+to+Create+a+GitHub+Page++(%E2%8A%99.%E2%8A%99)%3F)](https://git.io/typing-svg)
-first, we need to sign in or create a GitHub account.
+
+<a>first, we need to sign in or create a GitHub account. </a>
 
 # <kbd>[**Visit My Live Website Link!**](https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c)</kbd>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Handjet&weight=600&size=22&pause=1000&color=B764FD&width=435&lines=My+Key+Takeaways++(%E0%B9%91%3E%E2%97%A1%3C%E0%B9%91))](https://git.io/typing-svg)
-i have learned a lot so far. the future me will edit this
+<a> i have learned a lot so far. the future me will edit this </a>
