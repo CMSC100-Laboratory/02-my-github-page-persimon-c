@@ -21,16 +21,16 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Handjet&weight=600&size=22&pause=1000&color=ff69b4&width=435&lines=🎀+How+to+Create+a+GitHub+Page+(⊙.⊙)%3F)](https://git.io/typing-svg)
 
 ✧˖ · **Step 1: Create Repository** ✧˖ · 
-Sign in to your GitHub account and create a new repository ✨ You can name it anything you like, but if you want to create a user or organization site, you must name the repository `<username>.github.io` (replace `<username>` with your GitHub username) 💕
+Sign in to your GitHub account and create a new repository. You can name it anything you like, but if you want to create a user or organization site, you must name the repository `<username>.github.io` (replace `<username>` with your GitHub username) 
 
 ✧˖ · **Step 2: Clone & Add Files** ✧˖ · 
-Clone the repository to your local machine and add your website files (HTML, CSS, JavaScript, etc.) to the repository 🌸 But make sure your main HTML file is named `index.html` otherwise it wouldn't work! ⭐
+Clone the repository to your local machine and add your website files (HTML, CSS, JavaScript, etc.) to the repository. But make sure your main HTML file is named `index.html` otherwise it wouldn't work! 
 
 ✧˖ · **Step 3: Commit & Push** ✧˖ · 
-Commit and push your changes to the GitHub repository 💫 Once you push your changes, GitHub will automatically build and deploy your website! GitHub is so smart~ (´ ▽｀)
+Commit and push your changes to the GitHub repository. Once you push your changes, GitHub will automatically build and deploy your website!
 
 ✧˖ · **Step 4: Visit Your Site** ✧˖ · 
-Access your website by going to `https://<username>.github.io` (replace `<username>` with your GitHub username) in your web browser 🎀 Your website should be live and accessible to anyone on the internet! Enjoy~✨
+Access your website by going to `https://<username>.github.io` (replace `<username>` with your GitHub username) in your web browser. Your website should be live and accessible to anyone on the internet!
 
 ---
 
@@ -44,10 +44,10 @@ Access your website by going to `https://<username>.github.io` (replace `<userna
 
 **I have learned so much throughout while making my site ^^**
 
-✧ Creating a portfolio from scratch taught me the importance of web design and user experience
-✧ and that GitHub Pages is an amazing way to showcase your work to the world
-✧ It is also very fun.
-✧ The future me will continue to improve this portfolio and add more features :33
+✧ Creating a portfolio from scratch taught me the importance of web design and user experience  
+✧ and that GitHub Pages is an amazing way to showcase your work to the world  
+✧ It is also very fun.  
+✧ The future me will continue to improve this portfolio and add more features :33  
 
 > *“Thus we may know that there are five essentials for victory:
 1 He will win who knows when to fight and when not to fight.
