@@ -53,7 +53,8 @@ Access your website by going to `https://<username>.github.io` (replace `<userna
 ✧ Creating a portfolio from scratch taught me the importance of web design and user experience  
 ✧ and that GitHub Pages is an amazing way to showcase your work to the world  
 ✧ It is also very fun.  
-✧ The future me will continue to improve this portfolio and add more features :33  
+✧ The future me will continue to improve this portfolio and add more features :33 
+✧ I am excited to add some JS scripts! 
 
 > *“Thus we may know that there are five essentials for victory:
 1 He will win who knows when to fight and when not to fight.
