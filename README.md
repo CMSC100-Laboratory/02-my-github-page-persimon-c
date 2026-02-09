@@ -16,6 +16,12 @@
 </pre>
 </p>
 
+<p align="center">
+  <a href="https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c">
+    <img src="https://img.shields.io/badge/✨%20VISIT%20MY%20WEBSITE%20✨-ff69b4?style=for-the-badge&logo=github&logoColor=white&labelColor=ff1493" alt="Visit My Portfolio"/>
+  </a>
+</p>
+
 ---
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Handjet&weight=600&size=22&pause=1000&color=ff69b4&width=435&lines=🎀+How+to+Create+a+GitHub+Page+(⊙.⊙)%3F)](https://git.io/typing-svg)
