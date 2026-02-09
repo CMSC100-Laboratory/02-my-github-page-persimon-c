@@ -2,17 +2,17 @@
 
 <p align="center">
 <pre>
- ★━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━★
- ◆                     💖 USER PROFILE v1.0 💖                          ◆
- ◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆
- ◆                                                                    ◆
- ◆   /\___/\          🌸 SYSTEM STATUS 🌸                            ◆
+ ★━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━★
+ ◆                           USER PROFILE v1.0                              ◆
+ ◆━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━◆
+ ◆                                                                          ◆
+ ◆   /\___/\          🌸 SYSTEM STATUS 🌸                                  ◆
  ◆  (  o . o )        ⋆ NAME................: Simone Pauline M. Dagondon    ◆
- ◆   >  ^  <          ⋆ DEGREE PROGRAM.....: BS Computer Science           ◆
- ◆  /       \         ⋆ YEAR_LVL...........: Sophomore                     ◆
- ◆  \_______/         ⋆ LIVE WEBSITE.......: https://cmsc100-laboratory... ◆
- ◆                                                                    ◆
- ★━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━★
+ ◆   >  ^  <          ⋆ DEGREE PROGRAM.....: BS Computer Science            ◆
+ ◆  /       \         ⋆ YEAR_LVL...........: Sophomore                      ◆
+ ◆  \_______/         ⋆ LIVE WEBSITE.......: https://cmsc100-laboratory...  ◆
+ ◆                                                                          ◆
+ ★━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━★
 </pre>
 </p>
 
@@ -40,10 +40,6 @@ Access your website by going to `https://<username>.github.io` (replace `<userna
   </a>
 </p>
 
-<p align="center">
-  <b>💕 Click above to see my portfolio! 💕</b><br>
-</p>
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Handjet&weight=600&size=22&pause=1000&color=ff69b4&width=435&lines=🌟+My+Key+Takeaways+(๑%3E◡%3C๑)+🌟)](https://git.io/typing-svg)
 
 **I have learned so much throughout while making my site ^^**
@@ -53,7 +49,12 @@ Access your website by going to `https://<username>.github.io` (replace `<userna
 ✧ It is also very fun.
 ✧ The future me will continue to improve this portfolio and add more features :33
 
-> *“If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle.”
+> *“Thus we may know that there are five essentials for victory:
+1 He will win who knows when to fight and when not to fight.
+2 He will win who knows how to handle both superior and inferior forces.
+3 He will win whose army is animated by the same spirit throughout all its ranks.
+4 He will win who, prepared himself, waits to take the enemy unprepared.
+5 He will win who has military capacity and is not interfered with by the sovereign.”
 ― Sun Tzu, The Art of War*
 
 ---
