@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c">
+  <a href="https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c/#terminal-window">
     <img src="https://img.shields.io/badge/✨%20VISIT%20MY%20WEBSITE%20✨-c77dff?style=for-the-badge&logo=github&logoColor=white&labelColor=b764fd" alt="Visit My Portfolio"/>
   </a>
 </p>
@@ -41,7 +41,7 @@ Access your website by going to `https://<username>.github.io` (replace `<userna
 ---
 
 <p align="center">
-  <a href="https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c">
+  <a href="https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c/#terminal-window">
     <img src="https://img.shields.io/badge/✨%20VISIT%20MY%20WEBSITE%20✨-c77dff?style=for-the-badge&logo=github&logoColor=white&labelColor=b764fd" alt="Visit My Portfolio"/>
   </a>
 </p>
