@@ -17,6 +17,18 @@
     --win95-highlight-text: #ffffff;
     --title-bar-active: linear-gradient(to right, #000080, #1084d0);
     --title-bar-inactive: linear-gradient(to right, #808080, #b0b0b0);
+    
+    --y2k-pink: #ff69b4;
+    --y2k-light-pink: #ffc0cb;
+    --y2k-hot-pink: #ff1493;
+    --y2k-baby-pink: #ffb6d9;
+    --y2k-mint: #98ff98;
+    --y2k-light-mint: #b4ffb4;
+    --y2k-baby-blue: #add8e6;
+    --y2k-light-blue: #b0e0e6;
+    --y2k-light-lavender: #f0e6ff;
+    --y2k-peach: #ffb347;
+    --y2k-light-peach: #ffd699;
 }
 
 body {
@@ -27,8 +39,7 @@ body {
     margin: 0;
 }
 
-
-/* ===== Desktop ===== */
+/* ===== Desktop Container ===== */
 .desktop {
     display: flex;
     flex-direction: column;
@@ -38,6 +49,7 @@ body {
     position: relative;
 }
 
+/* ===== Desktop Background ===== */
 .desktop-background {
     flex: 1;
     background: var(--win95-teal);
@@ -52,6 +64,7 @@ body {
     overflow: hidden;
 }
 
+/* ===== Desktop Icons ===== */
 .desktop-icons {
     display: flex;
     flex-direction: column;
@@ -99,7 +112,7 @@ body {
     color: var(--win95-white);
 }
 
-/* ===== Window ===== */
+/* ===== Window CSS ===== */
 .window {
     position: absolute;
     display: flex;
@@ -179,6 +192,132 @@ body {
     height: 450px;
 }
 
+/* ===== Title Bar ===== */
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--title-bar-active);
+    padding: 2px 3px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.window:not(:target) .title-bar {
+    background: var(--title-bar-inactive);
+}
+
+.title-bar-text {
+    color: var(--win95-white);
+    font-weight: bold;
+    font-size: 11px;
+    padding-left: 3px;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title-bar-controls {
+    display: flex;
+    gap: 2px;
+}
+
+.title-bar-button {
+    width: 16px;
+    height: 14px;
+    background: var(--win95-gray);
+    border-top: 1px solid var(--win95-white);
+    border-left: 1px solid var(--win95-white);
+    border-right: 1px solid var(--win95-black);
+    border-bottom: 1px solid var(--win95-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--win95-black);
+}
+
+.title-bar-button:active {
+    border-top: 1px solid var(--win95-black);
+    border-left: 1px solid var(--win95-black);
+    border-right: 1px solid var(--win95-white);
+    border-bottom: 1px solid var(--win95-white);
+}
+
+.title-bar-button.close {
+    font-size: 12px;
+    line-height: 1;
+}
+
+/* ===== Menu Bar ===== */
+.menu-bar {
+    display: flex;
+    background: var(--win95-gray);
+    border-bottom: 1px solid var(--win95-white);
+    padding: 2px 4px;
+    flex-shrink: 0;
+}
+
+.menu-item {
+    padding: 3px 8px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.menu-item:hover {
+    background: var(--win95-highlight);
+    color: var(--win95-white);
+}
+
+.menu-item:active {
+    background: var(--win95-dark-gray);
+}
+
+/* ===== Toolbar ===== */
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background: var(--win95-gray);
+    padding: 3px 4px;
+    border-bottom: 1px solid var(--win95-dark-gray);
+    border-top: 1px solid var(--win95-white);
+    flex-shrink: 0;
+}
+
+.toolbar-button {
+    width: 24px;
+    height: 22px;
+    background: var(--win95-gray);
+    border-top: 1px solid var(--win95-white);
+    border-left: 1px solid var(--win95-white);
+    border-right: 1px solid var(--win95-black);
+    border-bottom: 1px solid var(--win95-black);
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolbar-button:active {
+    border-top: 1px solid var(--win95-black);
+    border-left: 1px solid var(--win95-black);
+    border-right: 1px solid var(--win95-white);
+    border-bottom: 1px solid var(--win95-white);
+}
+
+.toolbar-separator {
+    width: 1px;
+    height: 18px;
+    background: var(--win95-dark-gray);
+    margin: 0 2px;
+}
+
 /* ===== Window Body ===== */
 .window-body {
     flex: 1;
@@ -207,19 +346,611 @@ body {
     border-bottom: 1px solid var(--win95-black);
 }
 
-/* ===== Toolbar ===== */
-.toolbar {
+/* ===== Terminal ===== */
+.terminal-body {
+    background: var(--win95-black);
+    color: var(--win95-white);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    padding: 8px;
+    line-height: 1.4;
+}
+
+.terminal-body pre {
+    margin: 0;
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: auto;
+}
+
+/* ===== About Me ===== */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-box {
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, var(--y2k-light-pink) 0%, var(--y2k-light-lavender) 50%, var(--y2k-light-blue) 100%);
+    border-top: 2px solid var(--y2k-hot-pink);
+    border-left: 2px solid var(--y2k-hot-pink);
+    border-right: 2px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6), 0 4px 8px rgba(255, 105, 180, 0.3);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, var(--y2k-light-pink), var(--y2k-light-lavender));
+    border-top: 3px solid var(--y2k-hot-pink);
+    border-left: 3px solid var(--y2k-hot-pink);
+    border-right: 3px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4), inset 0 0 6px rgba(255, 255, 255, 0.6);
+    position: relative;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.photo-text {
+    font-weight: bold;
+    color: var(--win95-dark-gray);
+    text-align: center;
+    font-size: 10px;
+}
+
+.photo-dimensions {
+    font-size: 9px;
+    color: var(--win95-dark-gray);
+    margin-top: 5px;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--y2k-hot-pink);
+    font-weight: bold;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8);
+}
+
+.profile-title {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: var(--y2k-pink);
+}
+
+.profile-subtitle {
+    font-size: 11px;
+    color: var(--win95-blue);
+}
+
+.section-box {
+    padding: 12px;
+    background: var(--win95-white);
+    border-top: 1px solid var(--win95-dark-gray);
+    border-left: 1px solid var(--win95-dark-gray);
+    border-right: 1px solid var(--win95-white);
+    border-bottom: 1px solid var(--win95-white);
+    border-radius: 6px;
+    position: relative;
+}
+
+.section-box.bio-box {
+    background: linear-gradient(135deg, rgba(255, 192, 203, 0.3) 0%, rgba(230, 179, 255, 0.3) 100%);
+    border-top: 2px solid var(--y2k-baby-pink);
+    border-left: 2px solid var(--y2k-baby-pink);
+    border-right: 2px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.section-box.edu-box {
+    background: linear-gradient(135deg, rgba(152, 255, 152, 0.3) 0%, rgba(173, 216, 230, 0.3) 100%);
+    border-top: 2px solid var(--y2k-mint);
+    border-left: 2px solid var(--y2k-mint);
+    border-right: 2px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.section-box.hobbies-box {
+    background: linear-gradient(135deg, rgba(255, 179, 71, 0.3) 0%, rgba(240, 230, 255, 0.3) 100%);
+    border-top: 2px solid var(--y2k-peach);
+    border-left: 2px solid var(--y2k-peach);
+    border-right: 2px solid rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.section-box h3 {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: var(--y2k-hot-pink);
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+}
+
+.section-box p {
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: var(--win95-blue);
+}
+
+/* ===== Projects ===== */
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-card {
+    display: flex;
+    gap: 15px;
+    padding: 12px;
+    background: var(--win95-light-gray);
+    border-top: 1px solid var(--win95-dark-gray);
+    border-left: 1px solid var(--win95-dark-gray);
+    border-right: 1px solid var(--win95-white);
+    border-bottom: 1px solid var(--win95-white);
+}
+
+.project-image {
+    width: 50%;
+    height: 200px;
+    background-color: #c0c0c0;
+    border: 2px inset #dfdfdf;
     display: flex;
     align-items: center;
-    gap: 2px;
-    background: var(--win95-gray);
-    padding: 3px 4px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: var(--win95-blue);
+}
+
+.project-tech {
+    font-size: 10px;
+    color: var(--win95-dark-gray);
+    margin-bottom: 8px;
+    font-family: 'Courier New', monospace;
+}
+
+.project-description {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.project-link {
+    font-size: 11px;
+    color: var(--win95-blue);
+    text-decoration: underline;
+}
+
+.project-link:hover {
+    color: var(--win95-highlight);
+}
+
+/* ===== Skills ===== */
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-legend {
+    padding: 10px;
+    background: var(--win95-light-gray);
+    border-top: 1px solid var(--win95-dark-gray);
+    border-left: 1px solid var(--win95-dark-gray);
+    border-right: 1px solid var(--win95-white);
+    border-bottom: 1px solid var(--win95-white);
+}
+
+.skills-legend h4 {
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--win95-blue);
+    margin-bottom: 8px;
+}
+
+.legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.legend-badge {
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    border-left: 2px solid rgba(255, 255, 255, 0.8);
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.legend-badge.expert {
+    background: linear-gradient(135deg, #00aa00, #008000);
+}
+
+.legend-badge.advanced {
+    background: linear-gradient(135deg, #0066ff, #0044cc);
+}
+
+.legend-badge.intermediate {
+    background: linear-gradient(135deg, #ffaa00, #ff8800);
+}
+
+.legend-badge.beginner {
+    background: linear-gradient(135deg, #cc6600, #aa5500);
+}
+
+.legend-label {
+    font-size: 11px;
+    color: var(--win95-blue);
+}
+
+.skill-group {
+    padding: 12px;
+    background: var(--win95-light-gray);
+    border-top: 1px solid var(--win95-dark-gray);
+    border-left: 1px solid var(--win95-dark-gray);
+    border-right: 1px solid var(--win95-white);
+    border-bottom: 1px solid var(--win95-white);
+}
+
+.skill-group h3 {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: var(--win95-blue);
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 3px;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    border-left: 2px solid rgba(255, 255, 255, 0.8);
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    cursor: default;
+    white-space: nowrap;
+}
+
+.skill-badge.expert {
+    background: linear-gradient(135deg, #00aa00, #008000);
+    color: var(--win95-white);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.skill-badge.advanced {
+    background: linear-gradient(135deg, #0066ff, #0044cc);
+    color: var(--win95-white);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.skill-badge.intermediate {
+    background: linear-gradient(135deg, #ffaa00, #ff8800);
+    color: var(--win95-white);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.skill-badge.beginner {
+    background: linear-gradient(135deg, #cc6600, #aa5500);
+    color: var(--win95-white);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Resume ===== */
+.resume-body {
+    background: var(--win95-white);
+    padding: 20px;
+}
+
+.resume-document {
+    max-width: 650px;
+}
+
+.resume-header {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--win95-black);
+    border-bottom: 2px solid var(--win95-black);
+    padding-bottom: 8px;
+}
+
+.resume-section {
+    margin-bottom: 20px;
+}
+
+.resume-section h2 {
+    font-size: 14px;
+    color: var(--win95-blue);
+    margin-bottom: 10px;
     border-bottom: 1px solid var(--win95-dark-gray);
-    border-top: 1px solid var(--win95-white);
+    padding-bottom: 4px;
+}
+
+.resume-section p {
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+
+.resume-section ul {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.resume-section li {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+.download-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--win95-gray);
+    border-top: 2px solid var(--win95-white);
+    border-left: 2px solid var(--win95-white);
+    border-right: 2px solid var(--win95-black);
+    border-bottom: 2px solid var(--win95-black);
+    text-decoration: none;
+    color: var(--win95-black);
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.download-button:active {
+    border-top: 2px solid var(--win95-black);
+    border-left: 2px solid var(--win95-black);
+    border-right: 2px solid var(--win95-white);
+    border-bottom: 2px solid var(--win95-white);
+}
+
+/* ===== Contact Me ===== */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-content h2 {
+    font-size: 16px;
+    color: var(--win95-blue);
+    margin-bottom: 8px;
+}
+
+.contact-content > p {
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 12px;
+    background: var(--win95-light-gray);
+    border-top: 1px solid var(--win95-dark-gray);
+    border-left: 1px solid var(--win95-dark-gray);
+    border-right: 1px solid var(--win95-white);
+    border-bottom: 1px solid var(--win95-white);
+}
+
+.contact-icon {
+    font-size: 24px;
     flex-shrink: 0;
 }
 
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
+.contact-details strong {
+    font-size: 12px;
+}
+
+.contact-details a {
+    font-size: 11px;
+    color: var(--win95-blue);
+    text-decoration: underline;
+}
+
+.contact-details a:hover {
+    color: var(--win95-highlight);
+}
+
+/* ===== Status Bar ===== */
+.status-bar {
+    display: flex;
+    gap: 2px;
+    background: var(--win95-gray);
+    border-top: 1px solid var(--win95-white);
+    padding: 2px;
+    font-size: 11px;
+    flex-shrink: 0;
+}
+
+.status-bar-field {
+    padding: 2px 6px;
+    border-top: 1px solid var(--win95-dark-gray);
+    border-left: 1px solid var(--win95-dark-gray);
+    border-right: 1px solid var(--win95-white);
+    border-bottom: 1px solid var(--win95-white);
+    flex: 1;
+}
+
+/* ===== Taskbar ===== */
+.taskbar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--win95-gray);
+    border-top: 2px solid var(--win95-white);
+    padding: 2px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.start-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 8px;
+    background: var(--win95-gray);
+    border-top: 2px solid var(--win95-white);
+    border-left: 2px solid var(--win95-white);
+    border-right: 2px solid var(--win95-black);
+    border-bottom: 2px solid var(--win95-black);
+    font-weight: bold;
+    font-size: 11px;
+    cursor: pointer;
+    height: 24px;
+}
+
+.start-button:active {
+    border-top: 2px solid var(--win95-black);
+    border-left: 2px solid var(--win95-black);
+    border-right: 2px solid var(--win95-white);
+    border-bottom: 2px solid var(--win95-white);
+}
+
+.start-icon {
+    font-size: 16px;
+}
+
+.taskbar-separator {
+    width: 2px;
+    height: 24px;
+    background: var(--win95-dark-gray);
+    border-right: 1px solid var(--win95-white);
+}
+
+.taskbar-items {
+    display: flex;
+    gap: 2px;
+    flex: 1;
+    overflow-x: auto;
+}
+
+.taskbar-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 6px;
+    background: var(--win95-gray);
+    border-top: 1px solid var(--win95-white);
+    border-left: 1px solid var(--win95-white);
+    border-right: 1px solid var(--win95-black);
+    border-bottom: 1px solid var(--win95-black);
+    font-size: 11px;
+    text-decoration: none;
+    color: var(--win95-black);
+    height: 22px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.taskbar-icon {
+    font-size: 14px;
+}
+
+.taskbar-text {
+    font-size: 11px;
+}
+
+.system-tray {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 2px 6px;
+    border-top: 1px solid var(--win95-dark-gray);
+    border-left: 1px solid var(--win95-dark-gray);
+    border-right: 1px solid var(--win95-white);
+    border-bottom: 1px solid var(--win95-white);
+    height: 22px;
+}
+
+.tray-icon {
+    font-size: 12px;
+}
+
+.tray-time {
+    font-size: 11px;
+    font-weight: normal;
+}
 
 /* ===== For Responsiveness ===== */
 @media (max-width: 768px) {
@@ -259,4 +990,18 @@ body {
     .taskbar-item {
         padding: 2px 4px;
     }
+}
+
+/* ===== Context Menu ===== */
+.context-menu {
+    position: fixed;
+    width: 150px;
+    background-color: var(--win95-gray);
+    border: 2px solid var(--win95-white);
+    border-right-color: var(--win95-dark-gray);
+    border-bottom-color: var(--win95-dark-gray);
+    z-index: 2000;
+    display: none;
+    padding: 2px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
