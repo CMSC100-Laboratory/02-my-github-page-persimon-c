@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Retro Windows Desktop Portfolio">
+    <title>Simone's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="desktop">
+
+        <!-- Context Menu (if gagamitin left click) -->
+        <div id="desktop-context-menu" class="context-menu">
+            <div class="menu-item">View</div>
+            <div class="menu-item">Arrange Icons</div>
+            <div class="menu-item">Line Up Icons</div>
+            <hr>
+            <div class="menu-item">Paste</div>
+            <div class="menu-item">Paste Shortcut</div>
+            <hr>
+            <div class="menu-item">New Folder</div>
+            <div class="menu-item">New Shortcut</div>
+            <hr>
+            <div class="menu-item">Properties</div>
+        </div>
+
+        <!-- Desktop Background -->
+        <div class="desktop-background">
+
+            <!-- Desktop Icons -->
+            <div class="desktop-icons">
+                <div class="desktop-icon">
+                    <div class="icon-image">💻</div>
+                    <div class="icon-label">My Computer</div>
+                </div>
+                <div class="desktop-icon">
+                    <div class="icon-image">📂</div>
+                    <div class="icon-label">My Documents</div>
+                </div>
+                <div class="desktop-icon">
+                    <div class="icon-image">🌐</div>
+                    <div class="icon-label">Internet Explorer</div>
+                </div>
+                <div class="desktop-icon">
+                    <div class="icon-image">📝</div>
+                    <div class="icon-label">Notepad</div>
+                </div>
+                <div class="desktop-icon">
+                    <div class="icon-image">🧮</div>
+                    <div class="icon-label">Calculator</div>
+                </div>
+                <div class="desktop-icon">
+                    <div class="icon-image">🐈</div>
+                    <div class="icon-label">Meow</div>
+                </div>
+                <div class="desktop-icon">
+                    <div class="icon-image">🧱</div>
+                    <div class="icon-label">Minecraft</div>
+                </div>
+
+                <!-- Actual interactable desktop icons/apps (other than the bin) -->
+                <a href="#about-window" class="desktop-icon">
+                    <div class="icon-image">📁</div>
+                    <div class="icon-label">About Me</div>
+                </a>
+                
+                <a href="#projects-window" class="desktop-icon">
+                    <div class="icon-image">💾</div>
+                    <div class="icon-label">My Projects</div>
+                </a>
+                
+                <a href="#skills-window" class="desktop-icon">
+                    <div class="icon-image">🖥️</div>
+                    <div class="icon-label">Skills</div>
+                </a>
+                
+                <a href="#resume-window" class="desktop-icon">
+                    <div class="icon-image">📄</div>
+                    <div class="icon-label">Resume.doc</div>
+                </a>
+                
+                <a href="#contact-window" class="desktop-icon">
+                    <div class="icon-image">📧</div>
+                    <div class="icon-label">Contact</div>
+                </a>
+                
+                <div class="desktop-icon">
+                    <div class="icon-image">🗑️</div>
+                    <div class="icon-label">Recycle Bin</div>
+                </div>
+
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" class="desktop-icon">
+                    <div class="icon-image">💌</div>
+                    <div class="icon-label">Love</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Terminal Window -->
+        <div class="window terminal-window" id="terminal-window">
+            <div class="title-bar">
+                <div class="title-bar-text">C:\WINDOWS\System32\cmd.exe</div>
+                <div class="title-bar-controls">
+                    <span class="title-bar-button minimize">_</span>
+                    <span class="title-bar-button maximize">□</span>
+                    <a href="#" class="title-bar-button close">×</a>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Help</span>
+            </div>
+            <div class="window-body terminal-body">
+                <pre>
+Microsoft(R) Windows 95
+(C)Copyright Microsoft Corp 1981-1995.
+
+C:\WINDOWS\System32> winfetch
+
+    ████████  ████████      persmon in a nutshell
+    ████████  ████████      ─────────────────────────
+    ████████  ████████      OS: Windows 95
+    ████████  ████████      Age: 19, turning 20 years old
+                            University: University of the Philippines Los Banos
+    ████████  ████████      Program: BS Computer Science
+    ████████  ████████      Year: Sophomore
+    ████████  ████████      Location: Carmona, Cavite, Philippines
+    ████████  ████████      
+                            Skills: HTML, CSS, JavaScript
+                            Interests: Web Development
+                            Status: Seeking Opportunities
+
+C:\WINDOWS\System32> help
+
+Available Commands:
+────────────────────────────────────────────────
+📂 about      - View About Me section
+💾 projects   - View My Projects  
+🖥️ skills     - View Skills & Competencies
+📄 resume     - View Resume/CV
+📧 contact    - View Contact Information
+❔ help       - Show this help message
+────────────────────────────────────────────────
+
+Credits to bytecodeminer for the wallpaper.
+Click desktop icons or taskbar to navigate.
+
+C:\WINDOWS\System32> ▋
+</pre>
+            </div>
+        </div>
+
+        <!-- About Me Window -->
+        <div class="window about-window" id="about-window">
+            <div class="title-bar">
+                <div class="title-bar-text">About Me - Personal Information</div>
+                <div class="title-bar-controls">
+                    <span class="title-bar-button minimize">_</span>
+                    <span class="title-bar-button maximize">□</span>
+                    <a href="#" class="title-bar-button close">×</a>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Insert</span>
+                <span class="menu-item">Format</span>
+                <span class="menu-item">Tools</span>
+                <span class="menu-item">Help</span>
+            </div>
+            <div class="toolbar">
+                <button class="toolbar-button">📄</button>
+                <button class="toolbar-button">💾</button>
+                <button class="toolbar-button">🖨️</button>
+                <span class="toolbar-separator"></span>
+                <button class="toolbar-button">✂️</button>
+                <button class="toolbar-button">📋</button>
+                <button class="toolbar-button">📑</button>
+            </div>
+            <div class="window-body">
+                <div class="about-content">
+                    <div class="profile-box">
+                        <div class="profile-photo">
+                            <img src="assets/simonepic.jpg" alt="Profile Picture">
+                        </div>
+                        <div class="profile-info">
+                            <h2>Simone Pauline M. Dagondon</h2>
+                            <p class="profile-title">Computer Science Student</p>
+                            <p class="profile-subtitle">Aspiring Fullstack Software Engineer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="section-box bio-box">
+                        <h3>📖 Biography 📖</h3>
+                        <p>
+                            I am a Computer Science student ✧˖ ୧༺♡༻୨ with a passion for creating 
+                            intuitive web applications. My journey in technology has equipped
+                            me with strong problem-solving skills and a solid foundation in 
+                            software development principles.
+                        </p>
+                        <p>
+                            Throughout my academic career, I have developed expertise in frontend 
+                            and backend technologies ᴀɴᴅ have worked on various projects that demonstrate my 
+                            ability to create user-friendly interfaces and efficient code. 🌸
+                        </p>
+                    </div>
+                    
+                    <div class="section-box edu-box">
+                        <h3>🎓 Education 🎓</h3>
+                        <p><strong>★ Bachelor of Science in Computer Science ★</strong></p>
+                        <p>University of the Philippines Los Banos | Expected Graduation: 2028 🌻</p>
+                    </div>
+
+                    <div class="section-box hobbies-box">
+                        <h3>🖌️ Hobbies 🖌️</h3>
+                        <p>
+                            In my free time, I enjoy painting 🎨, drawing, and exploring various forms of digital art. 
+                            These hobbies allow me to express my creativity ✧˖ and unwind from the demands of academic life.
+                            I also enjoy watching minecraft videos and playing the game itself (๑•́ ω •̀๑), 
+                            which has inspired me to learn more about game development and design.
+                        </p>
+                        <p>
+                            I also like reading chinese light novels ✨, manhwa, and manga, which has sparked my 
+                            interest in storytelling and character development. My favorite tags/genres are quick transmigration, isekai,
+                            romance subplot, and many more! 💕 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-field">Ready</span>
+                <span class="status-bar-field">Line 1, Col 1</span>
+            </div>
+        </div>
+
+        <!-- Projects Window -->
+        <div class="window projects-window" id="projects-window">
+            <div class="title-bar">
+                <div class="title-bar-text">My Projects - Project Portfolio</div>
+                <div class="title-bar-controls">
+                    <span class="title-bar-button minimize">_</span>
+                    <span class="title-bar-button maximize">□</span>
+                    <a href="#" class="title-bar-button close">×</a>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Favorites</span>
+                <span class="menu-item">Tools</span>
+                <span class="menu-item">Help</span>
+            </div>
+            <div class="window-body">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/cmsc12_project.png" alt="CMSC 12 - New York Times: Strands">
+                        </div>
+                        <div class="project-info">
+                            <h4>CMSC 12 - New York Times: Strands</h4>
+                            <p class="project-tech">Python</p>
+                            <p class="project-description">
+                                It is a game where the player is given a set of words and must connect them together to form a chain.
+                                The game is designed to test the player's vocabulary and creativity, as they must find connections between
+                                seemingly unrelated words. The player can use their knowledge of language and word associations to create a chain of words that connects the given words together.
+                            </p>
+                            <p class="project-description">
+                                It is a terminal-based game that can be played on any computer with Python installed. The game is designed to be simple and easy to play, but also challenging and rewarding for players of all skill levels.
+                            </p>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/cmsc150_project.png" alt="CMSC 150 - Greenvale Mitigation Planner">
+                        </div>
+                        <div class="project-info">
+                            <h4>CMSC 150 - Greenvale Mitigation Planner</h4>
+                            <p class="project-tech">R and RStudio</p>
+                            <p class="project-description">
+                                The Greenvale Mitigation Planner is a decision support tool designed for the fictional City of Greenvale. 
+                                Its primary purpose is to assist the city council in creating an optimal environmental action plan to meet strict national government pollution mandates.
+                                The app analyzes 30 different mitigation projects (ranging from renewable energy to public transport upgrades), each with specific costs and pollutant reduction capabilities. It  mathematically calculates the exact combination of these projects needed to satisfy 10 different pollution reduction targets simultaneously.
+                                The tool utilizes the Dual Simplex Linear Programming (LP) algorithm. This  mathematical method allows the system to sort through infinite combinations of fractional  project units to find the global minimum cost—ensuring the city spends the least amount of money possible while strictly meeting every environmental requirement. 
+                            </p>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/cmsc22_project.png" alt="CMSC 22 - ICSkedUP">
+                        </div>
+                        <div class="project-info">
+                            <h4>CMSC 22 - ICSkedUP</h4>
+                            <p class="project-tech">Java</p>
+                            <p class="project-description">
+                                ICSkedUP is a Java-based desktop application designed to help students manage their class schedules and assignments effectively. 
+                                The app provides an intuitive interface for students to input their course information, including class times.
+                                It then generates a personalized calendar view that highlights important dates and deadlines, allowing students to stay organized and plan their schedules efficiently. 
+                                This app also includes the ability to save schedules, which helps for enlistment.
+                            </p>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/cmsc100_project.png" alt="CMSC 100 - Website Portfolio">
+                        </div>
+                        <div class="project-info">
+                            <h4>CMSC 100 - Website Portfolio</h4>
+                            <p class="project-tech">HTML, CSS, Git, GitHub</p>
+                            <p class="project-description">
+                                This is my personal portfolio website created as part of my CMSC 100 course. 
+                                It showcases my skills, projects, and experiences in web development. The website is built using HTML and CSS, 
+                                and it is hosted on GitHub Pages for easy access and sharing. The design focuses on a clean and user-friendly interface, 
+                                allowing visitors to navigate through different sections such as About Me, Projects, Skills, Resume, and Contact Information.
+                            </p>
+                            <p class="project-description">
+                                It has a desktop interface inspired by Windows 95, complete with interactive windows and a taskbar. 
+                                This project demonstrates my ability to create a visually appealing and functional static website.
+                            </p>
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-field">4 Projects</span>
+                <span class="status-bar-field">Ready</span>
+            </div>
+        </div>
+
+        <!-- Skills Window -->
+        <div class="window skills-window" id="skills-window">
+            <div class="title-bar">
+                <div class="title-bar-text">Skills - Technical Competencies</div>
+                <div class="title-bar-controls">
+                    <span class="title-bar-button minimize">_</span>
+                    <span class="title-bar-button maximize">□</span>
+                    <a href="#" class="title-bar-button close">×</a>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Help</span>
+            </div>
+            <div class="window-body">
+                <div class="skills-content">
+                    <div class="skills-legend">
+                        <h4>Proficiency Levels:</h4>
+                        <div class="legend-items">
+                            <div class="legend-item">
+                                <span class="legend-badge expert"></span>
+                                <span class="legend-label">Expert</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-badge advanced"></span>
+                                <span class="legend-label">Advanced</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-badge intermediate"></span>
+                                <span class="legend-label">Intermediate</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-badge beginner"></span>
+                                <span class="legend-label">Beginner</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h3>🌐 Web Programming</h3>
+                        <div class="skill-list">
+                            <span class="skill-badge expert">HTML5 & CSS</span>
+                            <span class="skill-badge advanced">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h3>💼 Management Skills</h3>
+                        <div class="skill-list">
+                            <span class="skill-badge advanced">Project Planning</span>
+                            <span class="skill-badge expert">Team Collaboration</span>
+                            <span class="skill-badge advanced">Technical Documentation</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-group">
+                        <h3>⚙️ Programming Languages</h3>
+                        <div class="skill-list">
+                            <span class="skill-badge advanced">Python</span>
+                            <span class="skill-badge intermediate">Java</span>
+                            <span class="skill-badge intermediate">C/C++</span>
+                            <span class="skill-badge intermediate">SQL</span>
+                            <span class="skill-badge beginner">R & RStudio</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>🛠️ Tools & Frameworks</h3>
+                        <div class="skill-list">
+                            <span class="skill-badge advanced">Git & GitHub</span>
+                            <span class="skill-badge expert">VS Code</span>
+                            <span class="skill-badge intermediate">Figma</span>
+                            <span class="skill-badge beginner">Blender</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-field">19 Skills Listed</span>
+            </div>
+        </div>
+
+        <!-- Resume Window -->
+        <div class="window resume-window" id="resume-window">
+            <div class="title-bar">
+                <div class="title-bar-text">Resume.doc - Microsoft Word</div>
+                <div class="title-bar-controls">
+                    <span class="title-bar-button minimize">_</span>
+                    <span class="title-bar-button maximize">□</span>
+                    <a href="#" class="title-bar-button close">×</a>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Insert</span>
+                <span class="menu-item">Format</span>
+                <span class="menu-item">Tools</span>
+                <span class="menu-item">Table</span>
+                <span class="menu-item">Window</span>
+                <span class="menu-item">Help</span>
+            </div>
+            <div class="toolbar">
+                <button class="toolbar-button">📄</button>
+                <button class="toolbar-button">📂</button>
+                <button class="toolbar-button">💾</button>
+                <button class="toolbar-button">🖨️</button>
+                <span class="toolbar-separator"></span>
+                <button class="toolbar-button">✂️</button>
+                <button class="toolbar-button">📋</button>
+                <button class="toolbar-button">📑</button>
+                <span class="toolbar-separator"></span>
+                <button class="toolbar-button">↩️</button>
+                <button class="toolbar-button">↪️</button>
+            </div>
+            <div class="window-body resume-body">
+                <div class="resume-document">
+                    <h1 class="resume-header">CURRICULUM VITAE</h1>
+                    
+                    <div class="resume-section">
+                        <h2>PERSONAL INFORMATION</h2>
+                        <p><strong>Name:</strong> Simone Pauline M. Dagondon</p>
+                        <p><strong>Email:</strong> smdagondon@up.edu.ph</p>
+                        <p><strong>Phone:</strong> 0994-853-1146 </p>
+                        <p><strong>Location:</strong> Carmona, Cavite, Philippines</p>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>EDUCATION</h2>
+                        <p><strong>Bachelor of Science in Computer Science</strong></p>
+                        <p>University of the Philippines Los Banos, Laguna, Philippines</p>
+                        <p>Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems</p>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>WORK EXPERIENCE</h2>
+                        <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>TECHNICAL SKILLS</h2>
+                        <p><strong>Languages:</strong> Python, HTML, CSS, C, Java</p>
+                        <p><strong>Tools:</strong> Git, GitHub, VS Code, Figma, Blender</p>
+                    </div>
+                    
+                    <div class="resume-section">
+                        <h2>PROJECTS</h2>
+                        <p><strong>CMSC 12 - New York Times: Strands</strong> - Terminal-based word connection game developed in Python to test vocabulary and creativity through word associations</p>
+                        <p><strong>CMSC 150 - Greenvale Mitigation Planner</strong> - Decision support tool using R and RStudio with Dual Simplex Linear Programming algorithm to optimize environmental action plans</p>
+                        <p><strong>CMSC 22 - ICSkedUP</strong> - Java-based desktop application for student schedule management with personalized calendar views and deadline tracking</p>
+                        <p><strong>CMSC 100 - Website Portfolio</strong> - Personal portfolio website with Windows 95 aesthetic built using HTML, CSS, Git, and GitHub Pages</p>
+                    </div>
+                    
+                    <div class="download-section">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1" class="download-button" download>💾 Download </a>
+                    </div>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-field">Page 1</span>
+                <span class="status-bar-field">Ready</span>
+            </div>
+        </div>
+
+        <!-- Contact Window -->
+        <div class="window contact-window" id="contact-window">
+            <div class="title-bar">
+                <div class="title-bar-text">Contact - Get In Touch</div>
+                <div class="title-bar-controls">
+                    <span class="title-bar-button minimize">_</span>
+                    <span class="title-bar-button maximize">□</span>
+                    <a href="#" class="title-bar-button close">×</a>
+                </div>
+            </div>
+            <div class="menu-bar">
+                <span class="menu-item">File</span>
+                <span class="menu-item">Edit</span>
+                <span class="menu-item">View</span>
+                <span class="menu-item">Help</span>
+            </div>
+            <div class="window-body">
+                <div class="contact-content">
+                    <h2>📧 Contact Information</h2>
+                    <p>Feel free to reach out for opportunities, collaborations, or just to connect (≧∇≦)ﾉ!</p>
+                    
+                    <div class="contact-box">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div class="contact-details">
+                                <strong>Email</strong>
+                                <a href="mailto:smdagondon@up.edu.ph">smdagondon@up.edu.ph</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">💻</span>
+                            <div class="contact-details">
+                                <strong>GitHub</strong>
+                                <a href="https://github.com/persimon-c" target="_blank">github.com/persimon-c</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">🔗</span>
+                            <div class="contact-details">
+                                <strong>Facebook</strong>
+                                <a href="https://www.facebook.com/persimonie" target="_blank">facebook.com/persimonie</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-icon">🌐</span>
+                            <div class="contact-details">
+                                <strong>Website</strong>
+                                <a href="https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c/" target="_blank">https://cmsc100-laboratory.github.io/02-my-github-page-persimon-c/</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status-bar">
+                <span class="status-bar-field">Ready to connect</span>
+            </div>
+        </div>
+
+        <!-- Taskbar -->
+        <div class="taskbar">
+            <button class="start-button">
+                <span class="start-icon">🪟</span>
+                <span class="start-text">Start</span>
+            </button>
+            
+            <div class="taskbar-separator"></div>
+            
+            <div class="taskbar-items">
+                <a href="#terminal-window" class="taskbar-item">
+                    <span class="taskbar-icon">📟</span>
+                    <span class="taskbar-text">Terminal</span>
+                </a>
+                <a href="#about-window" class="taskbar-item">
+                    <span class="taskbar-icon">📁</span>
+                    <span class="taskbar-text">About Me</span>
+                </a>
+                <a href="#projects-window" class="taskbar-item">
+                    <span class="taskbar-icon">💾</span>
+                    <span class="taskbar-text">My Projects</span>
+                </a>
+                <a href="#skills-window" class="taskbar-item">
+                    <span class="taskbar-icon">🖥️</span>
+                    <span class="taskbar-text">Skills</span>
+                </a>
+                <a href="#resume-window" class="taskbar-item">
+                    <span class="taskbar-icon">📄</span>
+                    <span class="taskbar-text">Resume.doc</span>
+                </a>
+                <a href="#contact-window" class="taskbar-item">
+                    <span class="taskbar-icon">📧</span>
+                    <span class="taskbar-text">Contact</span>
+                </a>
+            </div>
+            
+            <div class="system-tray">
+                <span class="tray-icon">🔊</span>
+                <span class="tray-icon">🌐</span>
+                <span id="clock" class="tray-time">12:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // a lil script only for the clock and context menu (that most ppl wont even notice) functionality, 
+    // not a main feature of the portfolio 🙏 just testing
+    
+    // clock update to show device time
+    function updateClock() {
+        const now = new Date();
+        const timeStr = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        document.getElementById('clock').textContent = timeStr;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+    
+    // context menu
+    const desktop = document.querySelector('.desktop-background');  
+    const contextMenu = document.getElementById('desktop-context-menu');
+
+    desktop.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        contextMenu.style.display = 'block';
+        contextMenu.style.left = e.pageX + 'px';
+        contextMenu.style.top = e.pageY + 'px';
+    });
+
+    // hide Context Menu
+    document.addEventListener('click', (e) => {
+        if (!contextMenu.contains(e.target)) {
+            contextMenu.style.display = 'none';
+        }
+    });
+</script>
+</body>
+</html>
